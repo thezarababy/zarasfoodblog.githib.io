@@ -1,0 +1,207 @@
+.wrapper{
+  
+  padding: 3rem;
+  background-color: skyblue;
+}
+body{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+.upheader{ 
+    color: brown;
+    text-align: center;
+}
+
+.upheader p{
+    margin-top: -0.5rem;
+    font-style: italic;
+    color: black;
+}
+.upheader h1{
+    margin: 0;
+    font-size: 3em;
+}
+
+.navbar { 
+    color:black;
+    padding: 10px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-right: 20px;
+
+  }
+  .navbar-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-links a {
+    color: brown;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+  
+  .menu {
+    cursor: pointer;
+  }
+  
+  .menu i {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .menu .fa-times {
+    display: none; /* Initially hide the close icon */
+  }
+  
+  .menu .fa-bars {
+    display: none; /* Initially hide the close icon */
+  }
+  
+.downheader{
+    margin-top: 20px; 
+    text-align: center;   
+}
+
+.aboutpage{
+    text-align: center;
+}
+#recipe ul{
+    text-align: center;
+    list-style-type: none;
+    line-height: 2;
+
+}
+.jollofrice{
+  
+  text-align: center;
+}
+
+h3{
+    padding-left: 1em;
+    font-size: larger;
+    text-align: center;
+    padding-top: 2em;
+}
+
+ol{
+    line-height: 1.5;  
+}
+
+
+#shop{
+    margin-bottom: 1px solid brown;
+}
+.shopimg{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+footer{
+    border-top: 2px solid brown;
+    text-align: center;
+}
+footer p{
+    padding-bottom: 0.5em;
+    font-size: smaller;
+}
+footer li{
+    padding:0.2em;
+}
+
+
+/* CSS for Responsive Design */
+
+/* Mobile First */
+@media  (max-width: 600px) {
+
+  /* Header */
+  .upheader h1{
+    font-size: 20px;
+  }
+  
+  .upheader p{
+    padding-top: 1em;
+    font-size: 10px;
+  }
+
+  .navbar-links {
+    display: none; /* Hide navigation links by default */
+  }
+
+  .menu .fa-bars {
+    display: block; /* Show hamburger menu icon */
+  }
+
+  .menu.active .fa-bars {
+    display: none; /* Hide hamburger menu icon when menu is active */
+  }
+
+  .menu.active .fa-times {
+    display: block; /* Show close icon when menu is active */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show navbar links when menu is active */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px; /* Adjust width as needed */
+    background-color:whitesmoke; /* Background color for the navbar */
+    padding: 20px; /* Adjust padding as needed */
+    margin: 35px 0; /* Adjust margin as needed */
+  }
+
+  /* About Section */
+  .aboutpage {
+      text-align: center;
+  }
+  .aboutpage img {
+  height: 10%;
+      width: 20%;
+  }
+
+  /* Recipe Section */
+  
+  
+  #recipe h2 {
+      text-align: center;
+  }
+  #recipe ul {
+      padding-left: 20px;
+  }
+  #recipe ol {
+      padding-left: 20px;
+  }
+
+  /* Shop Section */
+  #shop img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Footer */
+  footer ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+  }
+
+}
